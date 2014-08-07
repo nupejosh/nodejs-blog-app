@@ -31,35 +31,26 @@
             <header>
                 <h4 class="line-divider">Blog</h4>
                 <h1>Blos</h1>
-                <div class="row">
-                    <div class="span8 offset2">
-                        <div class="input-append">
-                          <input class="span5" id="appendedInputButton" type="text" placeholder="Search Blog">
-                          <button class="btn btn-primary sicon-search sicon-white" type="button"><i>Search</i></button>
-                        </div>
-                    </div>
-                </div>
             </header>
             <!-- End Header -->
-
+        <div class= 'row text-center'>        
+                <img src="images/node_turtle.png">
+            </div>
             <div class="row-fluid">
-                <div class="span8 blog-details">
+                <div class="blog-details">
                     <!-- Article -->
                     <article>
                         <!-- Blog image -->
-                        <a href="blog_1.html">
-                            <img src="http://placehold.it/900x450">
-                        </a>
-                        
+                    
                         <!-- Blog title -->
                         <h5>
                             Blog Post Title<br/>
-                            <small>Posted By <a href="#">Gridelicious</a>, April 10, 2013, in <a href="#">Photography</a></small>
+                            <small>Posted By <a href="#">Joshua</a>, August 7, 2014, in <a href="#">ATX</a></small>
                         </h5>
                         
                         <!-- Blog post description -->
                         <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            Hey guys! Welcome to my nodejs inspired blog app. This was built entirely on top of node with a little, well alot of help from Express.js and mongoose. 
                         </p>
                         <p>
                             Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.<br/>
@@ -68,124 +59,25 @@
                            Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
                         </p>
                         
-                        <!-- Blog read more -->
-                        <div class="read-more">
-                            <a href="blog_1.html">Read More...</a>
-                        </div>
-                        
-                        <!-- Blog comments -->
-                        <div class="comments">
-                            <a href="#">4 comments</a>
-                        </div>
-                    </article>
-                    
-                    
-                    <article>
-                        <!-- Blog video -->
-                        <iframe src="http://player.vimeo.com/video/33193443?portrait=0" width="800" height="341" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
-                        
-                        <!-- Blog title -->
-                        <h5>
-                            Blog Post Title<br/>
-                            <small>Posted By <a href="#">Gridelicious</a>, April 10, 2013, in <a href="#">Photography</a></small>
-                        </h5>
-                        
-                        <!-- Blog post description -->
+                         <!-- Blog Write comment -->
+                    <div class="write-comment" id="write-replay">
+                        <h6>Drop a comment</h6>
                         <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
+                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. 
                         </p>
-                        <p>
-                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.<br/>
-                        </p>
-                        <p>
-                           Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
-                        </p>
-                        
-                        <!-- Blog read more -->
-                        <div class="read-more">
-                            <a href="blog_2.html">Read More...</a>
+                        <div class="row-fluid">
+                            <div class="span8">
+                                <form method="post" action="/">
+                                    <input type="text" class="span12" name='body' placeholder="Title">
+                                    <input type="text" class="span12" placeholder="Email">
+                                    <textarea rows="5" class="span12"></textarea>
+                                    <button type="submit" value= "send" class="btn btn-primary">Post a comment</button>
+                                </form>
+                            </div>
                         </div>
-                        
-                        <!-- Blog comments -->
-                        <div class="comments">
-                            <a href="#">4 comments</a>
-                        </div>
-                    </article>
-                    
-                    
-                    <article>
-                        <!-- Blog image -->
-                        <a href="blog_3.html">
-                            <img src="http://placehold.it/900x450">
-                        </a>
-                        
-                        <!-- Blog title -->
-                        <h5>
-                            Blog Post Title<br/>
-                            <small>Posted By <a href="#">Gridelicious</a>, April 10, 2013, in <a href="#">Photography</a></small>
-                        </h5>
-                        
-                        <!-- Blog post description -->
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.
-                        </p>
-                        <p>
-                            Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod mazim placerat facer possim assum.<br/>
-                        </p>
-                        <p>
-                           Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.
-                        </p>
-                        
-                        <!-- Blog read more -->
-                        <div class="read-more">
-                            <a href="blog_3.html">Read More...</a>
-                        </div>
-                        
-                        <!-- Blog comments -->
-                        <div class="comments">
-                            <a href="#">4 comments</a>
-                        </div>
-                    </article>
-                    <!-- End Article -->
-                    
-                    <!-- Pagination -->
-                    <div class="pagination center">
-                        <ul>
-                            <li><a href="#">Prev</a></li>
-                            <li class="active"><span>1</span></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">5</a></li>
-                            <li><a href="#">Next</a></li>
-                        </ul>
                     </div>
-                </div>
-                <div class="span4 blog-list-right">
-                    <!-- Latest blog posts block -->
-                    <div class="block">
-                        <h6>Lates blog posts</h6>
-                        <ul class="simple-link-list">
-                            <li>
-                                <a href="blog_1.html" class="active">Blog post title 1</a>
-                            </li>
-                            <li>
-                                <a href="blog_2.html">Blog post title 2</a>
-                            </li>
-                            <li>
-                                <a href="blog_3.html">Blog post title 3</a>
-                            </li>
-                            <li>
-                                <a href="blog_4.html">Blog post title 4</a>
-                            </li>
-                            <li>
-                                <a href="blog_5.html">Blog post title 5</a>
-                            </li>
-                            <li>
-                                <a href="blog_6.html">Blog post title 6</a>
-                            </li>
-                        </ul>
-                    </div>
+                    <!-- End Blog Write comment -->
+                    </article>
                     
                     <!-- Tags -->
                     <div class="block">

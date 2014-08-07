@@ -2,7 +2,7 @@ var mongoose = require('mongoose');
 var Schema = mongoose.Schema;
 
 var postsSchema = new Schema({
-	date: Date 
+	date: Date, 
 	title: String, 
 	content: String,
 	comments: [{
@@ -11,4 +11,5 @@ var postsSchema = new Schema({
 	}]
 });
 
-mongoose.model('posts', postsSchema); 
+var posts = mongoose.model('posts', postsSchema); 
+module.exports = posts;
