@@ -4,11 +4,8 @@ var favicon = require('static-favicon');
 var logger = require('morgan');
 var cookieParser = require('cookie-parser');
 var bodyParser = require('body-parser');
-var fs = require('fs');
 var mongoose = require('mongoose');
 mongoose.connect('mongodb://localhost:27017/blog');
-
-//var users = require('./routes/users');
 
 var app = express();
 
@@ -25,17 +22,8 @@ app.use(express.static(path.join(__dirname, 'public')));
 var router = express.Router();
 
 var routes = require('./routes/index');
-var print = require('./routes/print');
 
-//app.use('/users', users);
-app.use('/hello', print);
 app.use('/', routes);
-
-//router.get('/now', function(req, res){ 
-//	mongoose.model('posts').find(function(err, p){
-//	 res.send(p);
-//		});
-//});
 
 /// catch 404 and forward to error handler
 app.use(function(req, res, next) {
